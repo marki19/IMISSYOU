@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PC Issue Notification</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 10px;
+    }
+    #notification {
+      padding: 100px;
+      background-color: #ffcccb;
+      border: 1px solid #2600ff;
+      color: #ff1f00;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div id="notification">
+    <p>YOUR PC HAS SOME ISSUE.<p>
+        </p>CLICK THE BUTTON FOR HELP.</p>
+    <button onclick="showSupportButton()">HELP</button>
+  </div>
+  
+    <script>
+    function showSupportButton() {
+      var notificationDiv = document.getElementById("notification");
+
+      // Create a new button
+      var supportButton = document.createElement("button");
+      supportButton.innerHTML = "I MISS YOU";
+      supportButton.onclick = function () {
+   alert("IKAW? MISS MO RIN BA AKO???");
+        // Add more functionality as needed
+      };
+
+      // Append the new button to the notification div
+      notificationDiv.appendChild(supportButton);
+    }
+      
+  </script>
+</body>
+</html>
